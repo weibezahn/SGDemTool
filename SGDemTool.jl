@@ -136,7 +136,7 @@ function generate_app_load_ts(a::appliance,s::Date,e::Date,tc::Vector)
     # initialize dataframe with time code
     app_load_ts = DataFrame()
     app_load_ts.Timecode = tc
-    app_load_ts[!, :load] .= 0
+    app_load_ts[!, :load] .= 0.0
 
     # add hourly device wattage between start and stop
     for i in collect(s:Day(1):e)
@@ -190,6 +190,7 @@ function generate_sg_load_ts(s::Date,e::Date)
 
     # simulate every household
     for i in 1:length(hh)
+        @info "simulating household $(hh[i].name)"
         sg_load_ts.hh = generate_hh_load_ts(hh[i],start_ts,end_ts).total_load
         rename!(sg_load_ts,:hh => hh[i].name)
     end
@@ -241,8 +242,8 @@ d = Binomial(1,p)
 
 ##### generate smart grid load profile #####
 
-start_ts = Date("2021-01-04") # start day of time series
-end_ts = Date("2021-01-10") # end day of time series
+start_ts = Date("2021-01-02") # start day of time series
+end_ts = Date("2021-01-08") # end day of time series
 
 sg_load_ts = generate_sg_load_ts(start_ts,end_ts)
 
