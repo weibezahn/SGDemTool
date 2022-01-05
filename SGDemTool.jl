@@ -242,8 +242,8 @@ d = Binomial(1,p)
 
 ##### generate smart grid load profile #####
 
-start_ts = Date("2021-01-02") # start day of time series
-end_ts = Date("2021-01-08") # end day of time series
+start_ts = Date("2019-06-01") # start day of time series
+end_ts = Date("2019-06-07") # end day of time series
 
 sg_load_ts = generate_sg_load_ts(start_ts,end_ts)
 
