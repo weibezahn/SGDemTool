@@ -1,3 +1,8 @@
+###### activate environment #####
+using Pkg
+Pkg.activate(pwd())
+
+##### packages #####
 using Dates
 using DataFrames, CSV
 using Distributions
