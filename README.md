@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/382070853.svg)](https://zenodo.org/badge/latestdoi/382070853)
+
 # SGDemTool
 
 Swarm Grid Demand Tool (SGDemTool) is a simulation tool for electricity demand time series in swarm grids based on a set of appliances operated by different households.
