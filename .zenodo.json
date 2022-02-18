@@ -1,0 +1,28 @@
+{
+    "upload_type": "software",
+    
+    "creators": [
+        {
+            "orcid": "0000-0003-1202-1709",
+            "affiliation": "Copenhagen School of Energy Infrastructure (CSEI)",
+            "name": "Weibezahn, Jens"
+        }
+    ],
+
+    "license": "MIT License",
+
+    "title": "Swarm Grid Demand Tool (SGDemTool)",
+
+    "related_identifiers": [
+        {
+            "scheme": "doi",
+            "identifier": "10.5547/2160-5890.11.1.rdum",
+            "relation": "isSupplementTo",
+            "resource_type": "publication-article"
+        }
+    ],
+
+    "keywords": ["electricity demand", "simulation", "time series", "swarm grid"],
+
+    "grants": [{"id": "10.13039/501100000780::101025788"}]
+}
